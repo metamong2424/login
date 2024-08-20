@@ -26,7 +26,7 @@ const client = new OAuth2Client(
 // CORS 설정
 app.use(
   cors({
-    origin: "http://localhost:3000", // React 앱의 주소를 허용해. 다른 도메인에서 요청을 받아들일 수 있게 해.
+    origin: "*", // React 앱의 주소를 허용해. 다른 도메인에서 요청을 받아들일 수 있게 해.
     credentials: true, // 인증 정보(쿠키 등)를 포함한 요청을 허용해.
   })
 );
